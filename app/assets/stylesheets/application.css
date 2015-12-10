@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require devise_bootstrap_views_less
+ */
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+/* applied to Signin, Signup */
+.panel.panel-default.landing {
+  width: 50%;
+  margin:auto;
+}
+
+.panel.panel-default.event-template {
+  margin-bottom: 0px;
+  padding: 5px;
+}
+
+.panel.panel-default.webform {
+  margin:0px;
+}
+
+body.beforelogin
+{
+    background: url('ct2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.row.navbar-clearance {
+  margin-top: 70px;
+}
+
+.webforms {
+  width: 50%;
+}
+
+html{
+  position:relative; 
+  min-height: 100%;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+}
+.pageContentWrapper{
+  margin-bottom:100px;/* Height of footer*/
+} 
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100px;
+}
